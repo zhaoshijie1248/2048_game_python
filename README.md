@@ -29,7 +29,7 @@ This is a simple command-line implementation of the popular 2048 game. The objec
     ```
 2. Navigate to the project directory:
     ```bash
-    cd 2048-game-python
+    cd 2048_game_python
     ```
 
 ## How to Play
@@ -38,10 +38,10 @@ This is a simple command-line implementation of the popular 2048 game. The objec
     python main.py
     ```
 2. Use the following keys to move tiles:
-   - **W**: Move Up
-   - **A**: Move Left
-   - **S**: Move Down
-   - **D**: Move Right
+   - **w**: Move Up
+   - **a**: Move Left
+   - **s**: Move Down
+   - **d**: Move Right
 
 3. After each move, a new tile with the number 2 will appear in an empty spot on the grid.
 4. The game ends when you create a tile with the number 2048 (win) or when there are no possible moves left (lose).
@@ -64,19 +64,3 @@ This is a simple command-line implementation of the popular 2048 game. The objec
     - `move_left`, `move_right`, `move_up`, `move_down`: Functions to handle movement in each direction.
     - `is_game_won`: Checks if a 2048 tile is present, signifying a win.
     - `is_move_possible`: Checks if there are possible moves left.
-
-## Future Enhancements
-Here are some potential improvements that could be made to this project:
-
-1. **Graphical User Interface (GUI)**: Use a library like Pygame to create a graphical version of the game.
-2. **Customizable Grid Size**: Allow the game to be played on larger grids (e.g., 5x5, 6x6).
-3. **Enhanced Tile Spawning**: Increase the difficulty by occasionally spawning tiles with higher values (like "4") instead of just "2".
-4. **Score Tracking**: Keep track of the player's score and display it during gameplay.
-
-## License
-This project is open-source and available under the MIT License. Feel free to use, modify, and distribute it.
-
-## Acknowledgments
-This project is inspired by the popular 2048 game created by Gabriele Cirulli. This implementation is for educational purposes and provides a simple command-line version of the game.
-
-Enjoy playing 2048!
