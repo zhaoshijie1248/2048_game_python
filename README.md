@@ -8,7 +8,6 @@ This is a simple command-line implementation of the popular 2048 game. The objec
 - [Installation](#installation)
 - [How to Play](#how-to-play)
 - [Project Structure](#project-structure)
-- [Future Enhancements](#future-enhancements)
 
 ## Features
 - A 4x4 grid where tiles slide in four directions (up, down, left, right).
