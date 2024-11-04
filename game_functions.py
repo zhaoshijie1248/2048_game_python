@@ -2,6 +2,8 @@ import random
 
 GRID_SIZE = 4
 
+
+### Grid Functions: Initialize the grid, print the grid, and add random tiles.
 def initialize_grid():
     grid = [[0] * GRID_SIZE for _ in range(GRID_SIZE)]
     add_random_tile(grid)
@@ -19,6 +21,8 @@ def print_grid(grid):
         print("\t".join(str(cell) if cell != 0 else "." for cell in row))
     print()
 
+
+### Helper Functions: compress, merge, transpose, and reverse rows and columns.
 def compress(grid):
     new_grid = [[0] * GRID_SIZE for _ in range(GRID_SIZE)]
     for i in range(GRID_SIZE):
@@ -45,6 +49,8 @@ def transpose(grid):
     new_grid = [[grid[j][i] for j in range(GRID_SIZE)] for i in range(GRID_SIZE)]
     return new_grid
 
+
+## Movement Functions: Functions for each direction (move_up, move_down, move_left, move_right)
 def move_left(grid):
     grid = compress(grid)
     grid = merge(grid)
@@ -69,6 +75,8 @@ def move_down(grid):
     grid = transpose(grid)
     return grid
 
+
+### Game Status Functions: Functions to check if the game is won or if moves are still possible.
 def is_game_won(grid):
     for row in grid:
         if 2048 in row:
